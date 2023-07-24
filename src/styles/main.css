@@ -547,6 +547,7 @@ footer .gt__footer-middle-section {
   background-size: cover;
   background-origin: border-box;
   background-repeat: no-repeat;
+  background-position: 50%;
   z-index: 0;
 }
 .promotional__section:before {
@@ -556,8 +557,6 @@ footer .gt__footer-middle-section {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgb(54, 125, 145);
-  background: linear-gradient(90deg, rgb(54, 125, 145) 0%, rgb(54, 125, 145) 30%, rgba(96, 198, 219, 0) 100%);
   z-index: -1;
 }
 
@@ -595,6 +594,7 @@ footer .gt__footer-middle-section {
   background-size: cover;
   background-origin: border-box;
   background-repeat: no-repeat;
+  background-position: 50%;
 }
 @media only screen and (min-width: 55em) {
   .insight__image {
@@ -712,6 +712,7 @@ footer .gt__footer-middle-section {
   background-size: cover;
   background-origin: border-box;
   background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 .our-stories__content h2 {
