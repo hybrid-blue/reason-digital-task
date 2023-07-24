@@ -25,8 +25,6 @@
             res.data.body.forEach((slice) => {
               data.value[slice.slice_type] = slice.primary;
             });
-
-            console.log(data.value);
           }
         } 
       });
@@ -55,8 +53,6 @@
             res.forEach((posts) => {
               data.value['highlights'].push(posts.data);
             });
-
-            console.log(data.value.highlights);
           }
         } 
       });

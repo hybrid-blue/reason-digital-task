@@ -12,7 +12,6 @@
     onMounted(() => {
         if (dataProps.body) {
             data.posts = dataProps.body.map((item) => {
-                console.log(item);
                 let posts = {};
 
                 const postDate = item.date.split('-');

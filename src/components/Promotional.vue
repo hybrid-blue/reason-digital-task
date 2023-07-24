@@ -15,7 +15,6 @@
     const style = ref(null);
 
     onMounted(() => {
-      console.log(dataProps.body);
       if (dataProps.body) {
         data.background = dataProps.body.background.url;
         data.heading = dataProps.body.heading[0].text;
