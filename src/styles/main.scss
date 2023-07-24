@@ -4,11 +4,12 @@
 @import './partials/header.scss';
 @import './partials/footer.scss';
 
+/*Pages*/
+@import './pages/404.scss';
+
 /*Components*/
 @import './components/Promotional.scss';
 @import './components/Insight.scss';
 @import './components/Hightlighted.scss';
 @import './components/OurStories.scss';
 @import './components/NewsListing.scss';
-
-@import './page/home.scss'

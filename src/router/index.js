@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import WhatWeDo from '../views/WhatWeDo.vue'
 import TheDigitalDivide from '../views/TheDigitalDivide.vue'
+import NoFound from '../views/404.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,7 +24,8 @@ const router = createRouter({
     },
     {
       path: '/:catchAll(.*)',
-      redirect: '/'
+      name: 'NotFound',
+      component: NoFound
     }
   ]
 })
