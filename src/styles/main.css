@@ -458,11 +458,6 @@ footer .gt__footer-bottom-section {
   grid-auto-flow: row;
   grid-template-rows: auto;
 }
-@media only screen and (min-width: 45em) {
-  footer .gt__footer-bottom-section {
-    grid-template-columns: 50% 50%;
-  }
-}
 @media only screen and (min-width: 55em) {
   footer .gt__footer-bottom-section {
     grid-template-columns: 66% 33%;
@@ -481,7 +476,7 @@ footer .gt__footer-bottom-section-inner {
 footer .get__footer-website-by {
   text-align: left;
 }
-@media only screen and (min-width: 45em) {
+@media only screen and (min-width: 55em) {
   footer .get__footer-website-by {
     text-align: right;
   }

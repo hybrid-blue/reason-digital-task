@@ -28,7 +28,7 @@
       <div class="gt__container-inner">
         <nav>
           <div class="gt__header-logo">
-            <img src="/src/assets/good-things-foundation-logo.png">
+            <RouterLink to="/"><img src="/src/assets/good-things-foundation-logo.png"></RouterLink>
           </div>
           <ul class="gt__navigation gt__desktop-nav">
             <li v-for="(nav, i) in navigation" :key="i">
