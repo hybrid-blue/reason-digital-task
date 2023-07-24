@@ -1,0 +1,132 @@
+.news-listing__section {
+  padding: 2em 0;
+  background: var(--color-background-alt);
+
+  h2 {
+    margin-bottom: 1em;
+  }
+}
+
+.news-listing__call-to-actions {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+
+  @media only screen and (min-width: $lg) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.news-listing__image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.news-listing__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em;
+  height: 100%;
+
+  h3 {
+    margin: 0 0 1em 0;
+  }
+}
+
+.news-listing__title {
+  margin: 0 0 1em 0;
+
+  p, span {
+    font-weight: 600;
+  }
+
+  span {
+    color: var(--secondary-color);
+  }
+}
+
+.news-listing__call-to-action {
+  background: var(--color-background);
+}
+
+.news-listing__featured-call-to-action {
+  .news-listing__call-to-action {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  
+    .news-listing__image, 
+    .news-listing__content {
+      width: 100%;
+    }
+  
+    @media only screen and (min-width: $sm) {
+      flex-direction: row-reverse;
+  
+      .news-listing__image, 
+      .news-listing__content {
+        width: 50%;
+      }
+    }
+
+    @media only screen and (min-width: $lg) {
+      flex-direction: column;
+  
+      .news-listing__image, 
+      .news-listing__content {
+        width: 100%;
+      }
+    }
+  
+  }
+}
+
+.news-listing__recent-call-to-action {
+  .news-listing__call-to-action {
+    display: flex;
+    flex-direction: column;
+
+    .news-listing__image, 
+    .news-listing__content {
+      width: 100%;
+    }
+
+    &:first-child {
+      margin-bottom: 2em;
+    }
+
+    @media only screen and (min-width: $sm) {
+      flex-direction: row-reverse;
+
+      .news-listing__image, 
+      .news-listing__content {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.news-listing__link {
+  display: flex;
+  align-items: center;
+  color: var(--button-red);
+  font-weight: 700;
+  margin: 1.25em 0 0 0;
+
+  svg {
+    fill: var(--button-red);
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 0 0 0 0.5em;
+    transition: all 0.25s;
+  }
+
+  &:hover {
+    color: var(--button-red);
+
+    svg {
+      margin: 0 0 0 1em;
+    }
+  }
+}

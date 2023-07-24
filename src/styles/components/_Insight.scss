@@ -1,0 +1,44 @@
+.insight__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (min-width: $md) {
+    flex-direction: row;
+  }
+}
+
+.insight__image {
+  width: 100%;
+  height: 400px;
+  background-image: var(--background);
+  background-size: cover;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+
+  @media only screen and (min-width: $md) {
+    width: 50%;
+    height: auto;
+  }
+}
+
+.insight__content {
+  background: var(--tertiary-color);
+  width: 100%;
+  padding: 2em;
+
+  @media only screen and (min-width: $md) {
+    width: 50%;
+    padding: 5em;
+  }
+}
+
+.insight__title {
+  color: var(--primary-color);
+}
+
+.insight__text {
+  color: var(--primary-color);
+  font-size: 1.5em;
+  line-height: 1.3;
+  margin-top: 1em;
+}

@@ -1,0 +1,35 @@
+.our-stories__section {
+  h2 {
+    font-size: 2em;
+
+    @media only screen and (min-width: $md) {
+      font-size: 3.375em;
+    }
+  }
+}
+
+.our-stories__content-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding: 3em 0;
+}
+
+.our-stories__section {
+  background-image: var(--background);
+  background-size: cover;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+}
+
+.our-stories__content {
+  h2 {
+    width: 100%;
+    background: var(--color-background);
+    color: var(--tertiary-color);
+    padding: 0.75em;
+  
+    @media only screen and (min-width: $md) {
+      width: 50vw;
+    }
+  }
+}

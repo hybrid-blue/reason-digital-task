@@ -1,0 +1,128 @@
+footer {
+  background: #ececec;
+
+  h2 {
+    margin-bottom: 1em;
+  }
+
+  a {
+    color: var(--color-text);
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+  ul {
+    li {
+      margin: 0 0.666em 0 0;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  .gt__footer-top-section,
+  .gt__footer-middle-section,
+  .gt__footer-bottom-section {
+    padding: 3em 0;
+  }
+
+  .gt__footer-middle-section {
+    display: flex;
+  }
+  
+  .gt__footer-middle-section,
+  .gt__additional-infomation {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+  }
+
+  .gt__additional-infomation {
+    ul {
+      margin: 0 0 2em 0;
+    }
+  }
+
+  .gt__footer-bottom-section {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-flow: row;
+    grid-template-rows: auto;
+
+    @media only screen and (min-width: $sm) {
+      grid-template-columns: 50% 50%;
+    }
+
+    @media only screen and (min-width: $md) {
+      grid-template-columns: 66% 33%;
+    }
+
+    @media only screen and (min-width: $lg) {
+      grid-template-columns: 75% 25%;
+    }
+  }
+
+  .gt__footer-bottom-section-inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .get__footer-website-by {
+    text-align: left;
+
+    @media only screen and (min-width: $sm) {
+      text-align: right;
+    }
+  }
+
+  .gt__footer-copyright {
+    margin-bottom: 2em;
+
+    @media only screen and (min-width: $sm) {
+      margin-bottom: 2em;
+    }
+  }
+
+  .gt__footer-top-section {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    grid-template-rows: auto;
+    column-gap: 2em;
+
+    ul {
+      li {
+        margin: 0 0 1em 0;
+      }
+    }
+
+    @media only screen and (min-width: $sm) {
+      grid-template-rows: auto;
+      grid-auto-columns: 1fr 1fr;
+      grid-auto-flow: column;
+      grid-template-rows: auto auto;
+    }
+
+    @media only screen and (min-width: $lg) {
+      grid-template-rows: auto;
+      grid-auto-columns: 1fr;
+      grid-template-rows: auto;
+    }
+  }
+  
+  .gt__additional-infomation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .gt__footer-top-section,
+  .gt__footer-middle-section {
+    border-bottom: 1px solid var(--color-border);
+  }
+}
+
+
